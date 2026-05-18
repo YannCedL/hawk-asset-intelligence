@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/hawk_asset_intelligence/__init__.py
+src/hawk_asset_intelligence/detector.py
+src/hawk_asset_intelligence/labeler.py
+src/hawk_asset_intelligence.egg-info/PKG-INFO
+src/hawk_asset_intelligence.egg-info/SOURCES.txt
+src/hawk_asset_intelligence.egg-info/dependency_links.txt
+src/hawk_asset_intelligence.egg-info/requires.txt
+src/hawk_asset_intelligence.egg-info/top_level.txt
+tests/test_detector.py
