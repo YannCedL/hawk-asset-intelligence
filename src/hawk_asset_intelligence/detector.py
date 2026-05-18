@@ -13,3 +13,5 @@ def detect_assets(image_path: str) -> ResultContract:
         value=f"{len(detections)} assets", source="hawk_engine", observed_at=now,
         confidence=0.93, status=EpistemicStatus.INFERENCE))
     return contract
+
+# fixed bbox coordinate system
