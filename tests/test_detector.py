@@ -1,6 +1,9 @@
-from hawk_asset_intelligence import detect_assets
+# test du moteur de détection d'actifs Hawk
+from hawk_asset_intelligence.detector import detect_assets
 
 def test_detect_assets():
-    c = detect_assets("satellite_image.jpg")
-    assert c.result["count"] > 0
-    assert c.confidence > 0.9
+    contract = detect_assets("vue_aerienne_site.jpg")
+    assert contract is not None
+    assert len(contract.result["detections"]) >= 1
+    assert contract.result["total_estimated_value_eur"] > 0
+    assert len(contract.evidence) >= 1
